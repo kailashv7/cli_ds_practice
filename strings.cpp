@@ -4,15 +4,13 @@
 #include <stdio.h>
 
 int main(){
-std::cout << "Kai" << std::endl;
-const char *s = "Venthan";
-printf("%s", s);
 
-std::fstream inputFile("text.txt");
 
-if(inputFile.is_open()){
+std::fstream inputFile("../spinning_cube/text.txt");
+
+if(!inputFile.is_open()){
     std::cerr << "Error could not open the File" << std::endl;
-    return 1;    
+    return 1;
 }
 
 std::string line;
