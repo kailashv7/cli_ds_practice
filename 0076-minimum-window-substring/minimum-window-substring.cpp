@@ -1,6 +1,9 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
+        if (s.length() < t.length()) {
+            return "";
+        }
         unordered_map<char, int> need, have;
         for(char c : t) need[c]++;
         int required = need.size(), formed = 0;
