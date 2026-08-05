@@ -16,7 +16,6 @@ public:
     
         ListNode* currentNode = head;
       
-        int pos = 1;
         
         for(int i=0;i<left-1;i++){
            leftList = leftList -> next;
